@@ -3,7 +3,17 @@ body {
     padding: 0%;
     background: #FF9B04;
     background: linear-gradient(225deg, #FF9B04, #FFFFFB);
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    width: clamp(280px, 40vw, 400px);
+    border-radius: 10px;
 }
 
 
@@ -11,6 +21,3 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
-}
