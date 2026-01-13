@@ -7,28 +7,24 @@
     <title>Login</title>
 </head>
 <body>
-    <div>
+    <div class="formulario">
+        <h1>Bienvenido, Usuario</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>Nombre de usuario</label>
+            </div>
 
-<h1>Bienvenido, Nombre</h1>
+            <div class="contrasena">
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div>
 
-<img src="Headshot Login.webp" alt="User">
+            <div class="recordar">¿Olvidó su contraseña?</div>
+            <input type="submit" value="Iniciar sesión">
 
-<form method="post">
-
-<label for="Correo">Correo</label>
-<input type="text" id="Correo" name="Correo" placeholder="Correo electrónico">
-<br>
-<label for="contrasena">Contraseña</label>
-<input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
-<br>
-<input type="submit" id="Iniciar sesión" name="Iniciar sesión">
-
-
-
-
-</form>
-
-
-    </div>
+            <div class="registrarse">
+                ¿No se ha registrado aún? <a href="#">Regístrese</a>
+            </div>
 </body>
 </html>
