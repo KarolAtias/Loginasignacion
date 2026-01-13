@@ -4,20 +4,37 @@ body {
     background: #FF9B04;
     background: linear-gradient(225deg, #FF9B04, #FFFFFB);
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario {
-    position: absolute;
     top: 50%;
     left: 50%;
     background-color: white;
-    transform: translate(-50%, -50%);
     width: clamp(280px, 40vw, 400px);
+    height: fit-content;
     border-radius: 10px;
-}
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 6px 4px 7px rgba(0, 0, 0, 0.2);
 
+}
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
 }
 
+.formulario form{
+    padding: 24px clamp(16px, 5vw, 40px);
+}
+
+img {
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 8vw;
+}
