@@ -10,31 +10,112 @@ body {
 }
 
 .formulario {
-    top: 50%;
-    left: 50%;
+    
     background-color: white;
-    width: clamp(280px, 40vw, 400px);
-    height: fit-content;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: blue;
-    box-shadow: 6px 4px 7px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    padding: 0 0 20px 0;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
-.formulario form{
-    padding: 24px clamp(16px, 5vw, 40px);
+.formulario form {
+    width: 100%;
 }
 
 img {
     display: block;
-    margin: 0 auto 15px auto;
-    width: 8vw;
+    margin: 0 auto 20px auto;
+    width: clamp(60px, 20vw, 90px);
+    border-radius: 100%;
+}
+
+.username, .contrasena {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.username input, .contrasena input {
+    width: 100%;
+    padding: 12px 40px 12px 10px;
+    border: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+.username label, .contrasena label {
+    position: absolute;
+    
+}
+
+
+
+.contrasena::after {
+    content: "👁";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.recordar {
+    text-align: right;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.recordar:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FF9B04;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e38900;
+}
+
+.registrarse {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.registrarse a {
+    color: #FF9B04;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 420px) {
+    .formulario {
+        padding: 25px 20px;
+    }
 }
